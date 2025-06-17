@@ -14,6 +14,10 @@ app.use(cors({
     credentials: true
 }));
 
+app.get('/', (req, res) => {
+    res.send("SERVER IS UP AD RUNNING");
+});
+
 app.use('/api/sales', salesRoutes);
 
 const PORT = process.env.PORT;
