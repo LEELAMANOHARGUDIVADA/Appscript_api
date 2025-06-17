@@ -14,7 +14,7 @@ const getSale = async (req, res) => {
 
         return res.status(200).json({ success: true, message: "Data Fetched", data: data[0] });
     } catch (error) {
-        return res.status(500).json({ success: false, message: "Internal Server Error", Error: error.message });
+        return res.status(500).json({ success: false, message: error.message });
     }
 }
 

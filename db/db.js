@@ -11,6 +11,7 @@ const connectDB = async() => {
             waitForConnections: true,
             queueLimit: 0
         });
+        console.log(pool);
         console.log("Database Connected");
     } catch (error) {
         console.log(error.message);
